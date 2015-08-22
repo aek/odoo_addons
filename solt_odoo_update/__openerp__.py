@@ -20,18 +20,16 @@
 #
 ##############################################################################
 
-
 {
-    'name': 'Soltein Auto Refresh Tree Views',
+    'name': 'Soltein Odoo Update Module',
     'version': '0.1',
     'category': 'web',
-    'description': """This module use the auto_refresh field of OpenERP actions to set a time based refresh of tree views.""",
+    'description': """This module extends Odoo to add a button that allow to update only the module, without update the depends modules.""",
     'author': 'aekroft@gmail.com',
-    'website': 'www.soltein.com.mx',
-    'depends': ['base', 'web', 'web_calendar', 'web_graph', 'web_kanban'],
-    'update_xml': [],
-    'js': [
-        'static/src/js/solt_autorefresh.js',
+    'website': 'www.soltein.org',
+    'depends': ['base', 'web',],
+    'data': [
+        'views/ir_module_view.xml',
     ],
     'active': False,
     'installable': True,
